@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<link rel="stylesheet" type="text/css" href="Style/Index.css">
+<link rel="stylesheet" type="text/css" href="Style/style-template.css">
+
+<body>
+    <header>
+        <a href="home.html"><img src="Assets/Logo-fix.png" class="logo-size"></a>
+        <div class="btn-nav dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Operators</a>
+                <a href="#">Maps</a>
+                <a href="#">Quarantine</a>
+                <a href="../PreOrder/preorder.html">PreOrder</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img
+                    src="Assets/Carousel/6b79978b9f03e1b2783f0b70f190c515_2534345e46c019a8a0a2.82368718_R6_Live_Y5S1_IMG_MAIN_KEYART.0.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Assets/Carousel/R6_LIVE_Y4S2_IMG_MAIN_KEYART_HD_WithLogo_1557833337.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Assets/Carousel/rainbow-six-siege-ember-rise.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <h1 class="mt-3">RAINBOW SEVEN SEIGE NEWS UPDATE</h1>
+
+        <div class="container-card special">
+            <div class="caption col-one-third">
+                <h2>
+                    ANNOUNCING THE RAINBOW 7 NORTH AMERICAN LEAGUE
+                </h2>
+                <p>
+                    As we close the door on our rainbow seven pro league,a new one opens.We're
+                    excited to finally share with you the next chapter of rainbow seven Esport in
+                    North America.
+                </p>
+                <button class="btn">
+                    READ MORE
+                </button>
+            </div>
+            <div class="img-banner col-two-third f-start test">
+                <img src="Assets/News/ezgif.com-webp-to-png.png" alt="">
+            </div>
+        </div>
+
+        <div class="container-card mt-3">
+            <div class=" img-banner col-half">
+                <img src="Assets/News/ezgif.com-webp-to-png (1).png" alt="">
+            </div>
+            <div class="caption col-half">
+                <h2>
+                    Y551.2 PATCH NOTES
+                </h2>
+                <p>
+                    The Y551.2 patch will deploy to PC and console in the week of April 20th.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-card mt-3">
+            <div class="img-banner col-half">
+                <img src="Assets/News/ezgif.com-webp-to-png (2).png" alt="">
+            </div>
+            <div class="caption col-half">
+                <h2>
+                    Y551.1 PATCH NOTES
+                </h2>
+                <p>
+                    The Y551.1 patch will deploy to PC and console in the week of March 20th.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h3>Find us On</h3>
+        </div>
+        <div class="img-footer">
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/Icon/4x/Facebook-logo-white@4x.png" alt=""></a>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/Icon/4x/Twitter-logo-white@4x.png" alt=""></a>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/Icon/4x/Youtube-Logo-White@4x.png" alt=""></a>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/Icon/4x/Instagram-logo-white@4x.png" alt=""></a>
+        </div>
+        <div>
+            <p>@2015 UbiHard Entertainment.All rights reserved.Rainbow seven</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function (e) {
+        if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+
+    var slideIndex = 1;
+    var tOut;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        clearTimeout(tOut); // reset current timeout
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        clearTimeout(tOut);
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = $(".mySlides");
+        var dots = $(".dot");
+
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+
+        slides.each(function (i) {
+            (i == slideIndex - 1) ? $(this).show() : $(this).hide();
+        });
+
+        dots.each(function (i) {
+            (i == slideIndex - 1) ? $(this).addClass("active") : $(this).removeClass("active");
+        });
+        tOut = setTimeout(() => showSlides(slideIndex += 1), 5000);
+    }  
+</script>

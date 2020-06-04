@@ -1,0 +1,147 @@
+
+.slideshow-container {
+    position: relative;
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    /* width: auto\9; */
+    display: block;
+  }
+.img-footer{
+  display: flex;
+  flex-direction: row;
+}
+.container-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 50%;
+    border: 2px solid #d1d8a0;
+    align-items: stretch;
+}
+.btn{
+    padding:1em;
+    border: 3px solid #d1d8a0;
+    background-color: transparent;
+    color: whitesmoke;
+}
+.col-one-third{
+    flex: 1;
+}
+.col-two-third{
+    flex: 3;
+}
+.test{
+  flex: 1;
+}
+.col-half 
+{
+    flex:1;
+}
+.mt-3{
+    margin-top: 3em;
+}
+.caption{
+    background-color: #4d4c47;
+    padding: 1em;
+    border: 3px solid #929291;
+}
+
+.img-banner{
+  align-self: stretch;
+  background-color: #4d4c47;
+}
+.f-start{
+  align-self: stretch;  
+}
+@media(max-width: 800px){
+    .container-card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 50%;
+        border: 2px solid #d1d8a0;
+        align-items: stretch;
+    }
+    .special{
+        flex-direction: column-reverse;
+    }
+}
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }

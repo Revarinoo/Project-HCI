@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Order</title>
+    <link rel="stylesheet" type="text/css" href="preorder.css">
+    
+</head>
+<body>
+	<header>
+        <a href="home.html"><img src="./Assets/Logo-fix.png" class="logo-size"></a>
+            <div class="btn-nav dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Operators</a>
+                <a href="#">Maps</a>
+                <a href="../Quarantine/Quarantine.html">Quarantine</a>
+                <a href="#">PreOrder</a>
+            </div>
+        </div>
+    </header>
+    <div class="background-img">
+	    <p class="title">PRE-ORDER RAINBOW SEVEN SIEGE</p>
+	    <div class="container">
+	    	<form class="position" id="preorder" onsubmit="return fsubmit()" action="">
+	    		<p class="text-form"><label for="username">Username</label></p>
+	    		<input class="custom-box" type="text" name="username" id="username" >
+
+	    		<p class="text-form"><label for="email">E-mail</label></p>
+	    		<input class="custom-box" type="text" name="email" id="email" >
+
+	    		<p class="text-form"><label for="password">Password</label></p>
+	    		<input class="custom-box" type="password" name="password" id="password" >
+
+	    		<p class="text-form"><label for="conf-password">Confirm Password</label></p>
+	    		<input class="custom-box" type="password" name="conf-password" id="conf-password" >
+
+	    		<p class="text-form"><label for="address">Address</label></p>
+	    		<textarea id="address" class="custom-box" ></textarea>
+
+	    		<p class="text-form"><label for="copies">Number of copies</label></p>
+	    		<input class="custom-box" type="text" name="copies" id="copies" >
+
+	    		<p class="text-form"><label for="gameType">Type of the game</label></p>
+	    		<input class="custom-box" type="text" name="gameType" id="gameType" >
+
+	    		<div class="agreement">
+					<input type="checkbox" name="agreed" id="terms" class="checkbox">
+					<label>I have read and I agree The Terms and Service Agreement</label>
+				</div>
+				<br>
+				<input type="submit" class="btnSubmit" value="submit">
+	    	</form>
+	    </div>
+	    <br> <br>
+    </div>
+    <footer>
+        <div>
+            <p class="footer-font">Find us On</p>
+        </div>
+        <div>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img class="custom-img2" src="Assets/Facebook-logo-white@4x.png" alt=""></a>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img class="custom-img2" src="Assets/Twitter-logo-white@4x.png" alt=""></a>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img class="custom-img2" src="Assets/Youtube-Logo-White@4x.png" alt=""></a>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img class="custom-img2" src="Assets/Instagram-logo-white@4x.png" alt=""></a>
+        </div>
+        <div>
+            <p class="footer-font2">&copy; 2015 Ubipost Entertainment. All rights reserved. Rainbow seven</p>
+        </div>
+    </footer>
+
+</body>
+
+    <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    function fsubmit(){
+    	var username = document.getElementById("username").value;
+    	var email = document.getElementById("email").value;
+    	var pass = document.getElementById("password").value;
+    	var conf = document.getElementById("conf-password").value;
+    	var address = document.getElementById("address").value;
+    	var copies = document.getElementById("copies").value;
+    	var type = document.getElementById("gameType").value;
+
+
+    	if(username == ""){
+    		alert("Username cannot be empty!");
+    		return false;
+    	}
+    	else if(email == ""){
+    		alert("Email cannot be empty!");
+    		return false;
+    	}
+    	else if(pass == ""){
+    		alert("Password cannot be empty");
+    		return false;
+    	}
+    	else if(conf != pass){
+    		alert("password not same!");
+    		return false;
+    	}
+    	else if(address == ""){
+    		alert("Address cannot be empty");
+    		return false;
+    	}
+    	else if(copies == ""){
+    		alert("Number of copies cannot be empty");
+    		return false;
+    	}
+    	else if(type == ""){
+    		alert("Type of the game cannot be empty");
+    		return false;
+    	}
+    	return true;
+
+    }
+    </script>
+</html>

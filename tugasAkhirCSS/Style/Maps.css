@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+  }
+.text-center{
+    text-align: center;
+}
+.mt-3{
+    margin-top: 1em;
+}
+.maps-container img{
+    width:100%; 
+    height:100%; 
+}
+.maps-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1a1e22;
+    justify-self: flex-start;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.maps-container{
+    width: 90%;
+}
+.img-small-1{
+    max-width: 30%;
+    border: 2px solid #d1d8a0;
+}
+.caption{
+    max-width: 40%;
+}
+.p-2{
+    padding: 2em;
+}
+.img-banner-small{
+    width: 20%;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+.mb-1{
+    margin-bottom: 1em;
+}
+.map-image-container{
+    text-align: right;
+}
+.maps-card img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.column{
+    max-width: 40%;
+    font-size: 1vw;
+}
+.map-section{
+    font-size: 1.2vw;
+}
+
+@media(max-width:950px){
+    .column{
+        text-align: center;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .map-top{
+        max-width: 100% !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    *{
+        font-size: 2.5vw !important;
+        text-align: justify !important;
+    }      
+    .img-banner-small .map-section,footer p{
+        text-align: center !important;
+    } 
+}
+.flex-center{
+    justify-content: space-evenly;
+}

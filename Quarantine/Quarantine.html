@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarantine</title>
+</head>
+<!-- <link rel="stylesheet" type="text/css" href="Rainbow.ttf"> -->
+<link rel="stylesheet" type="text/css" href="style-template.css">
+<body>
+    <header>
+        <a href="home.html"><img src="./Assets/Logo-fix.png" class="logo-size"></a>
+            <div class="btn-nav dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Operators</a>
+                <a href="#">Maps</a>
+                <a href="#">Quarantine</a>
+                <a href="../PreOrder/preorder.html">PreOrder</a>
+            </div>
+        </div>
+    </header>
+
+    
+        <p class="title">NEW GAME MODE</p>
+        <p class="title-2">QUARANTINE</p>
+        <div class="main-container">
+            <p class="content-1">In this game mode, the Rainbow team must complete a mission to a laboratory that has long been abandoned. This laboratory was abandoned because it was caught carrying out illegal experiments on humans. The Rainbow Team is required to look for evidence of the result of illegal experiments that have been carried out there.</p>
+        </div>
+        <div class="background-img">
+            <p class="title-3">UNKNOWN CREATURE</p>
+            <div class="main-container">
+                <img class="custom-img" src="./Assets/unknown creature.jpg">
+                <p class="content-2">As long as the Rainbow Team carries out its mission in the laboratory, they will be accompanied by an unknown creature. This creature is said to have originated from a virus infection from the results of illegal experiments that have been tested on humans.</p>
+            </div>
+
+            <p class="title-3">INFECTION</p>
+            <div class="main-container">
+                <img class="custom-img" src="./Assets/phase 1-infected.jpg"> 
+                <br> <br>
+                <img class="custom-img" src="./Assets/phase 2-getting worse.jpg">
+                <p class="content-2">The Rainbow Team must be careful during their mission in the laboratory. Because the creatures that are there can infect you with a virus that has mutated so that the Rainbow Team can become infected and become one of them or die.</p>
+            </div>
+            <p class="title-3">CURE</p>
+            <div class="main-container">
+                <img class="custom-img" src="./Assets/phase 3 - curing.jpg">
+                <br> <br>
+                <img class="custom-img" src="./Assets/phase 4 - cured.jpg">
+                <p class="content-2">While in this mode, each member of the Rainbow Team gets a bracelet that serves to cure the effects of a viral infection given by unknown creature. This bracelet only works once in each match. This bracelet can also be an indicator of whether you are infected or not.</p>
+            </div>
+            <br><br><br><br>
+        </div>
+        
+    <footer>
+        <div>
+            <p class="footer-font">Find us On</p>
+        </div>
+        <div>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img class="custom-img2" src="Assets/Facebook-logo-white@4x.png" alt=""></a>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img class="custom-img2" src="Assets/Twitter-logo-white@4x.png" alt=""></a>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img class="custom-img2" src="Assets/Youtube-Logo-White@4x.png" alt=""></a>
+            <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img class="custom-img2" src="Assets/Instagram-logo-white@4x.png" alt=""></a>
+        </div>
+        <div>
+            <p class="footer-font2">&copy; 2015 Ubipost Entertainment. All rights reserved. Rainbow seven</p>
+        </div>
+    </footer>
+</body>
+    <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</html>
