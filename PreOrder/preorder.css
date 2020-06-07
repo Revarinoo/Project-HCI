@@ -1,7 +1,8 @@
 @font-face{
-  font-family: Rainbow;
-  src: url('Rainbow.ttf');
+  font-family: LeagueGothic;
+  src: url('LeagueGothic-Regular.otf');
 }
+
 
 @font-face{
   font-family: Bahnschrift Light
@@ -23,7 +24,7 @@ body{
 }
 
 .title{
-  font-family: Rainbow;
+  font-family: LeagueGothic;
   font-size: 80pt;
   text-align: center;
   letter-spacing: 8pt;
@@ -69,15 +70,15 @@ textarea {
 }
 
 .btnSubmit {
-  font-family: Rainbow;
+  font-family: LeagueGothic;
   font-size: 40pt;
   letter-spacing: 0.1em;
   cursor: pointer;
   color: white;
   background-color: rgba(129,127,117,0.5);
   border: 1px solid transparent;
-  padding-left: 20px;
-  padding-top: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
 .checkbox {
@@ -117,7 +118,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: rainbow;
+    font-family: LeagueGothic;
     font-size: 20pt;
     color: whitesmoke;
     letter-spacing: 1px;
@@ -198,7 +199,7 @@ footer{
 
 
     .footer-font{
-    font-family: Rainbow;
+    font-family: LeagueGothic;
     font-size: 20pt;
     text-align: center;
    }
@@ -272,7 +273,7 @@ footer{
   }
 
   .footer-font{
-    font-family: Rainbow;
+    font-family: LeagueGothic;
     font-size: 40pt;
     text-align: center;
   }

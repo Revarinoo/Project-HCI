@@ -1,6 +1,6 @@
 @font-face{
-  font-family: Rainbow;
-  src: url('Rainbow.ttf');
+  font-family: LeagueGothic;
+  src: url('LeagueGothic-Regular.otf');
 }
 
 @font-face{
@@ -9,7 +9,7 @@
 }
 
 .title{
-  font-family: Rainbow;
+  font-family: LeagueGothic;
   font-size: 80pt;
   text-align: center;
   letter-spacing: 8pt;
@@ -17,7 +17,7 @@
 
 .title-2{
   margin-top: -70.78px;
-  font-family: Rainbow;
+  font-family: LeagueGothic;
   font-size: 120pt;
   text-align: center;
   color: #D0DB97;
@@ -63,7 +63,7 @@ body{
     margin: 0;
     padding: 0;
     background-color:#000000 ;
-    font-family: rainbow;
+    font-family: LeagueGothic;
     color:whitesmoke;
 }
 
@@ -107,7 +107,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: rainbow;
+    font-family: LeagueGothic;
     font-size: 20pt;
     color: whitesmoke;
     letter-spacing: 1px;
@@ -151,7 +151,7 @@ footer{
     }
 
     .footer-font{
-    font-family: Rainbow;
+    font-family: LeagueGothic;
     font-size: 20pt;
     text-align: center;
    }
@@ -225,7 +225,7 @@ footer{
   }
 
   .footer-font{
-    font-family: Rainbow;
+    font-family: LeagueGothic;
     font-size: 40pt;
     text-align: center;
   }
