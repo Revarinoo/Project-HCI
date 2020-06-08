@@ -69,6 +69,17 @@
     .special{
         flex-direction: column-reverse;
     }
+    .mt-3{
+      margin-top: 3em;
+      font-size: 28pt;
+      text-align: center;
+    }
+    .caption h2{
+      font-size: 14pt;   
+  }
+    .caption p{
+      font-size: 11pt;
+    }
 }
 
   /* Next & previous buttons */
