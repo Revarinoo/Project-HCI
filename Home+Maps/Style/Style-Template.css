@@ -31,8 +31,8 @@ header,footer{
     padding: 0 30px;
 }
 .carousel{
-    height: 720px;
-    width: 1280px;
+    height: 81.5vh;
+    width: 100vw;
 }
 .img-footer img{
     margin-top: 0px !important;
