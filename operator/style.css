@@ -1,0 +1,438 @@
+@font-face{
+  font-family: Bahnschrift;
+  src: url('BAHNSCHRIFT.TTF');
+}
+
+@font-face{
+font-family: Gothic;
+src: url('LeagueGothic-Regular.otf');
+}
+
+  
+.title{
+  font-family: Gothic;
+  font-size: 45pt;
+  text-align: center;
+  letter-spacing: 2pt;
+  margin-bottom: 180pt;
+}
+
+.title-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10pt;
+  margin-top: -44pt;
+}
+
+.text-codename{
+  font-family: Gothic;
+  font-size: 32pt;
+  letter-spacing: 2pt;
+  text-align: center;
+}
+
+.text-badge{
+  font-family: Gothic;
+  font-size: 30pt;
+  text-align: center;
+  letter-spacing: 2pt;
+}
+
+.Iana-Background{
+  position: relative;
+  z-index:1;
+  overflow:hidden; 
+}
+
+.Iana-Background:before{
+  z-index:-1;
+  position:absolute;
+  left:0;
+  content: url('./Assets/Iana/Iana.png');
+  opacity:0.5;
+}
+
+.Biography-iana{    
+  font-family: Gothic;
+  font-size: 26pt;
+  text-align: left;
+  letter-spacing: 1pt;
+  margin-left: 30pt;
+}
+
+.Biography-iana-1{    
+  font-family: Gothic;
+  font-size: 14pt;
+  text-align: left;
+  margin-left: 30pt;
+  margin-right: 400pt;
+}
+
+.Unique-iana{    
+  font-family: Gothic;
+  font-size: 26pt;
+  text-align: left;
+  letter-spacing: 1pt;
+  margin-left: 30pt;
+}
+
+.Gemini-left{
+  float: left;
+  width: 20%;
+  padding: 0px 40px;
+  margin-top: -20pt;
+  margin-right: -65pt;
+  margin-left: -40pt;
+}
+
+.text-unique-iana{
+  text-align: left;
+  font-family: Gothic;
+  font-size: 20pt;
+  margin-bottom: 10pt;
+  margin-left: 50pt;
+}
+
+.img-unique{
+  margin-left: -10pt;
+  margin-top: -10pt;
+}
+
+.text-unique-iana-2{
+  font-family: Gothic;
+  font-size: 14pt;
+  text-align: left;
+  margin-right: 550px;
+}
+
+.iana-portrait{
+  position: absolute;
+  right: -180px;
+  top:0px;
+  z-index: -1;
+}
+
+.text-loadout-1{
+  font-family: Gothic;
+  font-size: 32pt;
+  letter-spacing: 2pt;
+  text-align: center;
+}
+
+.weapon{
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+.text-gun{
+  text-align: left;
+  font-family: Gothic;
+  font-size: 42px;
+}
+
+.gun-1{
+  text-align: center;
+  border-style: solid;
+  width: 80%;
+  font-family: Gothic;
+  font-size: 18pt;
+}
+
+.gun-2{
+  text-align: center;
+  border-style: solid;
+  width: 80%;
+  font-family: Gothic;
+  font-size: 18pt;
+  margin-top: 20pt;
+  margin-bottom: 24px;
+}
+
+.Iana-Loadout{
+  width: 1200px;
+  display: table;
+  margin-left: auto;
+  margin-right: 3px; 
+}
+
+.Iana-Loadout:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Oryx-Loadout{
+  width: 1200px;
+  display: table;
+  margin-left: auto;
+  margin-right: 3px; 
+}
+
+.Oryx-Loadout:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Biography-oryx{    
+  font-family: Gothic;
+  font-size: 26pt;
+  text-align: right;
+  letter-spacing: 1pt;
+  margin-right: 30pt;
+}
+
+.Biography-oryx-1{
+  font-family: Gothic;
+  font-size: 14pt;
+  text-align: right;
+  margin-right: 30pt;
+  margin-left: 430pt;
+}
+
+.ORYX-Background{
+  position: relative;
+  z-index:1;
+  overflow:hidden; 
+}
+.ORYX-Background:before{
+  z-index:-1;
+  position:absolute;
+  left:0;
+  top:0;
+  content: url('./Assets/Oryx/Oryx.png');
+  opacity:0.5;
+}
+
+.oryx-portrait{
+  position: absolute;
+  left:-150px;
+  top:0px;
+  z-index: -1;
+}
+
+.Unique-ORYX{    
+  font-family: Gothic;
+  font-size: 26pt;
+  text-align: right;
+  letter-spacing: 1pt;
+  margin-right: 30pt;
+}
+
+.Remah-right{
+  float: right;
+  width: 10%;
+  margin-top: -20pt;
+}
+
+.Remah-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  
+}
+
+.img-unique-2{
+  margin-top: -10pt;
+  position: relative;
+  left: -90px;
+}
+
+.text-unique-oryx{
+  text-align: right;
+  font-family: Gothic;
+  font-size: 20pt;
+  margin-bottom: 10pt;
+  margin-right: 20pt;
+}
+
+.text-unique-oryx-2{
+  font-family: Gothic;
+  font-size: 14pt;
+  text-align: right;
+  margin-left: 560px;
+  margin-top: 5px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#000000 ;
+    font-family: Gothic;
+    color:whitesmoke;
+}
+
+header,footer{
+    padding: 0 30px;
+}
+header{
+    padding: 1em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #424b54;   
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+footer div img{
+    height: 50px;
+    margin-right: 1em;
+} 
+.btn-nav >a{
+    margin-right: 15px;
+}
+header .btn-nav{
+    font-size: 20px;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: rainbow;
+    font-size: 20pt;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    border-top: 4px solid #cfd8a9;
+}
+
+@media(max-width: 800px) {
+    footer img {
+        width: 15px;
+        height: 1px;
+    }
+    /* default size untuk text di layar kecil kalo gacocok override aja di css sendiri */
+    *{
+        font-size: 10px;  
+        max-width: 100%; 
+    }
+
+    .Iana-Background{
+        /* overflow: visible; */
+        width: 800px;
+        right: 40px;
+    }
+
+    .iana-portrait{
+      width: 700px;
+      margin-right: -120px;
+    }
+
+    .Biography-iana{
+      font-size: 20pt;
+    }
+
+    .Biography-iana-1{
+      font-size: 12pt;
+      margin-right: 300px;
+    }
+
+    .Unique-iana{
+      font-size: 20pt;
+    }
+
+    .Iana-Loadout{
+      width: 700px;
+      display: table;
+      margin-left: auto;
+      margin-right: 3px; 
+    }
+    
+
+    .Oryx-Loadout{
+      width: 700px;
+      display: table;
+      margin-left: auto;
+      margin-right: 3px; 
+    }
+
+    .footer-font{
+    font-family: Gothic;
+    font-size: 20pt;
+    text-align: center;
+   }
+
+   .footer-font2{
+    font-size: 15px !important;
+   }
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-image: url('Assets/Hamburger-menu-white@4x.png');
+    background-size: 30px 30px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: transparent;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .logo-size {
+  height: 50px;
+  width: auto;
+  max-width: 80px;
+}
+  
+  .dropdown-content {
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover 
+  {
+    background-color: #817f75; 
+  }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display:block;
+  }
+
+  .footer-font{
+    font-family: Gothic;
+    font-size: 40pt;
+    text-align: center;
+  }
+
+  .footer-font2{
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 20pt;
+    text-align: center;
+    letter-spacing: -0.3px;
+  }
+
