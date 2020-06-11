@@ -1,11 +1,33 @@
 * {
     box-sizing: border-box;
   }
+  @font-face{
+    font-family: Bahnschrift;
+    src: url('BAHNSCHRIFT.TTF');
+  }
 .text-center{
     text-align: center;
 }
 .mt-3{
-    margin-top: 1em;
+    margin-top: 3em;
+}
+.title{
+    font-size: 54pt;
+    letter-spacing: 5px;
+  }
+.definition{
+    font-family: Bahnschrift;
+    font-size: 1.35vw;
+}
+.heading{
+    font-size: 2.8vw;
+  }
+.content{
+    font-family: Bahnschrift;
+    font-size: 1.4vw;
+}
+.blueprint{
+    font-size: 16pt;
 }
 .maps-container img{
     width:100%; 
@@ -58,7 +80,7 @@
     font-size: 1vw;
 }
 .map-section{
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 @media(max-width:950px){
@@ -78,7 +100,18 @@
     }      
     .img-banner-small .map-section,footer p{
         text-align: center !important;
-    } 
+    }
+    .heading{
+        text-align: center !important;
+        font-size: 5vw !important;
+    }
+    .title{
+        font-size: 8vw !important;
+        text-align: center !important;
+    }
+    .definition{
+        text-align: center !important;
+    }
 }
 .flex-center{
     justify-content: space-evenly;

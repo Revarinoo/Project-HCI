@@ -42,8 +42,21 @@
 }
 .mt-3{
     margin-top: 3em;
-}
-.caption{
+  }
+  .title{
+    
+    font-size: 54pt;
+  }
+
+  .heading{
+    font-size: 28pt;
+  }
+  
+  .content{
+    font-size: 16pt;
+  }
+
+  .caption{
     background-color: #4d4c47;
     padding: 1em;
     border: 3px solid #929291;
@@ -71,14 +84,14 @@
     }
     .mt-3{
       margin-top: 3em;
-      font-size: 28pt;
+      font-size: 40pt;
       text-align: center;
     }
     .caption h2{
-      font-size: 14pt;   
+      font-size: 20pt;   
   }
     .caption p{
-      font-size: 11pt;
+      font-size: 14pt;
     }
 }
 
